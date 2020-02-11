@@ -1,50 +1,20 @@
 {
-	"name": "moonshine",
-	"description": "A lightweight Lua virtual machine.",
-	"keywords": [
-		"Moonshine",
-		"Lua",
-		"JavaScript",
-		"virtual machine",
-		"luac"
-	],
-	"author": {
-		"name": "Gamesys Limited.",
-		"url": "http://gamesyscorporate.com"
-	},
-	"contributors": [
-		{
-			"name": "Paul Cuthbertson",
-			"email": "paul.cuthbertson@gamesys.co.uk"
-		}
-	],
-	"version": "0.2.1",
-	"engines": {
-		"node": ">=0.8.x"
-	},
-	"main": "./index.js",
-	"bin": {
-		"moonshine": "./bin/moonshine"
-	},
-	"man": [
-		"./bin/man/moonshine.1",
-		"./bin/man/moonshine-debug.1",
-		"./bin/man/moonshine-distil.1"
-	],
-	"homepage": "http://moonshinejs.org",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/gamesys/moonshine"
-	},
-	"license": {
-		"type": "MIT",
-		"url": "http://moonshinejs.org/license"
-	},
-	"bugs": {
-		"url": "https://github.com/gamesys/moonshine/issues"
-	},
-	"dependencies": {
-		"express": "3.2.5",
-		"socket.io": "0.9.14"
-	}
+    "name": "ace-builds",
+    "main": "./src-noconflict/ace.js",
+    "typings": "ace.d.ts",
+    "version": "1.4.8",
+    "description": "Ace (Ajax.org Cloud9 Editor)",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ajaxorg/ace-builds.git"
+    },
+    "author": "",
+    "license": "BSD-3-Clause",
+    "bugs": {
+        "url": "https://github.com/ajaxorg/ace-builds/issues"
+    },
+    "homepage": "https://github.com/ajaxorg/ace-builds"
 }

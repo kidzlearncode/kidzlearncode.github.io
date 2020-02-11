@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Shellby's Coding Adventure!</title>
+        <style type="text/css" media="screen">
+        body {
+            overflow: hidden;
+        }
+        #editor {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+        </style>
+        <!--
+                    #editor {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        -->
+        <style>
+            #runButton
+            {
+                position: absolute;
+                float: left;
+                z-index: 5;
+                opacity: 0.5;
+                width: 5%;
+                height: 5%;
+                background-color: green;
+            }
+            #runButton:hover
+            {
+                position: absolute;
+                float: left;
+                z-index: 5;
+                opacity: 1.0;
+                width: 5%;
+                height: 5%;
+                background-color: green;
+            }
+            #characterMovementDisplay
+            {
+                float: left;
+                width: 50%;
+                height: 100%;
+                z-index:-1;
+                image-rendering: -moz-crisp-edges;    /* Firefox */
+                image-rendering: -webkit-crisp-edges; /* Webkit (Safari) */
+                image-rendering: pixelated;  
+            }
+        </style>
+    </head>
+    <body>
+        <div style="position: relative;">
+            <button id='runButton' onclick='RunCode();'>Run</button>
+            <canvas id='characterMovementDisplay'></canvas>
+        </div>
+        <pre id="editor">
+shellbyRight()
+i = 0
+while i < 5 do
+    i = i + 1
+    shellbyForward()
+end
+        </pre>
+
+        <script src="../Dependancies/Ace/ace-builds/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            var editor = ace.edit("editor");
+            editor.setTheme("ace/theme/dracula");
+            editor.session.setMode("ace/mode/lua");
+        </script>
+        <script src="../Dependancies/Moonshine/vm/moonshine.min.js"></script>
+        <script src="../Dependancies/Moonshine/extensions/DOMAPI/DOMAPI.moonshine.js"></script>
+        <script src="../Dependancies/Moonshine/distillery/distillery.moonshine.js"></script>
+        <script src="../Dependancies/Moonshine/extensions/luac/luac.moonshine.js"></script>
+        <script src="CharacterWindow.js"></script>
+    </body>
+</html>

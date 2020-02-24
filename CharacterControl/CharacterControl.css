@@ -1,0 +1,95 @@
+body {
+    overflow: hidden;
+}
+#editor {
+    position: relative;
+    top: 0;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+#runButton
+{
+    position: relative;
+    float: left;
+    /*z-index: 5;*/
+    opacity: 0.5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: green;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    font-style: oblique;
+}
+#runButton:hover
+{
+    position: relative;
+    float: left;
+    /*z-index: 5;*/
+    opacity: 1.0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: green;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    font-style: oblique;
+}
+#characterMovementDisplay
+{
+    float: left;
+    width: 50%;
+    height: 100%;
+    z-index:-1;
+    image-rendering: -moz-crisp-edges;    /* Firefox */
+    image-rendering: -webkit-crisp-edges; /* Webkit (Safari) */
+    image-rendering: pixelated;  
+}
+
+#sliderContainer
+{
+    float: left;
+    height: 50px;
+    border-radius: 30%;
+    background-color: green;
+    font: white;
+    color: white;
+    font-weight: 600;
+}
+
+.slider0::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider0::-moz-range-thumb
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+#shellbySpeedSlider
+{
+    position: relative;
+    top: 25%;
+}
+/*
+#editor {
+margin: 0;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+} */

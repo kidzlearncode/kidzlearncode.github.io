@@ -1,5 +1,5 @@
 ---
 deployment:
     tasks:
-      - export DEPLOYPATH = /home/user/
+      - export DEPLOYPATH = /home/sy144jchkcv/
       - cp -R * $DEPLOYPATH

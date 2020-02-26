@@ -2,4 +2,5 @@
 deployment:
     tasks:
       - export DEPLOYPATH = /home/sy144jcghkcv/
+      - cp public_html/index.php $DEPLOYPATH/public_html
       - cp -R /home/sy144jcghkcv/repositories/kidzlearncodehub.io/* $DEPLOYPATH

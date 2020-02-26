@@ -1,4 +1,5 @@
 ---
 deployment:
     tasks:
-      - cp public_html/index.php /home/sy144jcghkcv/public_html
+      - export DEPLOYPATH=/home/sy144jcghkcv
+      - cp -R * $DEPLOYPATH/public_html

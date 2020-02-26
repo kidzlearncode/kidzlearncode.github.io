@@ -20,4 +20,7 @@ for i in modifiedFiles:
 for i in createdFiles:
     content += ( '      - cp ' + i + ' $DEPLOYPATH/' +  i.split( '/', 1 )[ 0 ] + '\n' )
 
-print( content )
+yaml = open( '.cpanel.yml', 'w' )
+yaml.seek( 0 )
+yaml.write( content )
+yaml.close()

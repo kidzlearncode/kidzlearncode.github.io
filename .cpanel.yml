@@ -2,5 +2,3 @@
 deployment:
     tasks:
       - export DEPLOYPATH=/home/sy144jcghkcv/
-      - cp -R * $DEPLOYPATH
-      - echo Done

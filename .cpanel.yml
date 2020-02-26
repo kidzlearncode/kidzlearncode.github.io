@@ -1,5 +1,6 @@
 ---
 deployment:
     tasks:
-      - export DEPLOYPATH=/home/sy144jcghkcv
-      - cp -R * $DEPLOYPATH/public_html
+      - export DEPLOYPATH=/home/sy144jcghkcv/
+      - cp -R * $DEPLOYPATH
+      - echo Done

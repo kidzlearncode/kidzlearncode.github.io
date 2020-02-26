@@ -1,1 +1,1 @@
-public_html/CharacterControl/index.html
+public_html/index.html
